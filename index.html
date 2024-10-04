@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
+    <title>To-Do List with Date</title>
     <link rel="stylesheet" href="todolist.css">
 </head>
 <body>
     <header>
-        <h1 style="background-color: rgb(9, 9, 81); color: aliceblue;" >To-Do List App</h1>
+        <h1>To-Do List</h1>
     </header>
+
     <main>
-        <input type="text" id="task-input" placeholder="Enter a task...">
-        <button id="add-task-btn">Add Task</button>
-        <ul id="task-list">
-            <!-- tasks will be displayed here -->
-        </ul>
+        <!-- Date selection -->
+        <label for="date-input">Select Date:</label>
+        <input type="date" id="date-input">
+        <button id="select-date-btn">Show To-Do List</button>
+
+        <!-- To-Do List will show only after a date is selected -->
+        <div id="todo-section" style="display: none;">
+            <h2>To-Do List for <span id="selected-date"></span></h2>
+            <canvas id="progress-bar" width="100" height="100"></canvas>
+            <div id="completion-percentage"></div>
+            <input type="text" id="task-input" placeholder="Enter a task...">
+            <input type="number" id="required-hours" placeholder="Required Hours" min="0" step="0.1"> <!-- Required hours input -->
+            <button id="add-task-btn">Add Task</button>
+            <ul id="task-list">
+                <!-- tasks will be displayed here -->
+            </ul>
+        </div>
     </main>
 
     <script src="todolist.js"></script>
