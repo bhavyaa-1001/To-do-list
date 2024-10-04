@@ -1,48 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #031242;
+    color: white;
+    text-align: center;
 }
 
-#task-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* After entering a task, the text will be white */
-.task-row span {
-    font-size: 24px;
-    flex-grow: 1;
-    color: #ffffff; /* Set text color to white */
-}
-
-.task-row {
-    display: flex;
-    align-items: center;
+header {
+    background-color: #0a0a5c;
     padding: 20px;
-    border-bottom: 1px solid #cccccc;
-    transition: background-color 0.3s ease;
+    border-bottom: 5px solid #4CAF50;
 }
 
-.task-row:hover {
-    background-color: #030c5c;
+label {
+    font-size: 18px;
+    margin: 10px;
 }
 
-.task-row input[type="checkbox"] {
-    margin-right: 20px;
+input[type="date"], #task-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    margin: 10px;
+    width: 200px;
 }
 
-.task-row button {
-    background-color: #4caf50;
-    color: #ffffff;
+button {
     padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.task-row button:hover {
-    background-color: #3e8e41;
+button:hover {
+    background-color: #45a049;
+}
+
+#todo-section {
+    background-color: #1d1d4e; /* Dark background for the to-do section */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#completion-percentage {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+canvas {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #82dd85; /* Highlight on hover */
 }
 
 .completed {
@@ -50,26 +81,43 @@ body {
     color: #666;
 }
 
-#task-input {
-    width: 50%;
+.task-row button {
+    background-color: #f44336;
+}
+
+.task-row button:hover {
+    background-color: #d32f2f;
+}
+
+.task-row {
     padding: 10px;
-    font-size: 18px;
-    border: none;
+    background-color: #ffffff; /* Background color for task items */
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    background-color: #8f9fd4;
-    color: #ffffff; /* Text color in input is also white */
+    transition: background-color 0.3s;
 }
 
-#add-task-btn {
-    background-color: #33c32e;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+.task-row span {
+    color: #000000; /* Change this to your desired text color */
 }
 
-#add-task-btn:hover {
-    background-color: #087404;
+.task-row button {
+    background-color: #f44336; /* Button color */
 }
+
+.task-row button:hover {
+    background-color: #d32f2f; /* Button hover color */
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #4CAF50; /* Border color */
+    margin: 10px;
+    width: 200px;
+}
+
