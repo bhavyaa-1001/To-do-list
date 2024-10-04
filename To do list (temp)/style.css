@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #031242;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #0a0a5c;
+    padding: 20px;
+    border-bottom: 5px solid #4CAF50;
+}
+
+label {
+    font-size: 18px;
+    margin: 10px;
+}
+
+input[type="date"], #task-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    margin: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#todo-section {
+    background-color: #1d1d4e; /* Dark background for the to-do section */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#completion-percentage {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+canvas {
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #000000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #82dd85; /* Highlight on hover */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.task-row button {
+    background-color: #f44336;
+}
+
+.task-row button:hover {
+    background-color: #d32f2f;
+}
+
+.task-row {
+    padding: 10px;
+    background-color: #ffffff; /* Background color for task items */
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.task-row span {
+    color: #000000; /* Change this to your desired text color */
+}
+
+.task-row button {
+    background-color: #f44336; /* Button color */
+}
+
+.task-row button:hover {
+    background-color: #d32f2f; /* Button hover color */
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #4CAF50; /* Border color */
+    margin: 10px;
+    width: 200px;
+}
+
+
